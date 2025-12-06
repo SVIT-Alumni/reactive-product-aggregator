@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
-    private String id;
-    private String title;
-    private double price;
+public class PriceChange {
+    private String productId;
+    private double oldPrice;
+    private double newPrice;
+    private String changedAt;
 }
