@@ -1,58 +1,67 @@
 # Reactive Product Aggregator  
-**A high performance, fully reactive microservice built with Spring WebFlux, Project Reactor, and Java 17.**
+**A high performance reactive microservice built with Spring WebFlux and Project Reactor**
 
-This project demonstrates modern backend engineering practices used in large scale distributed systems.  
-It is intentionally designed to showcase skills required for senior engineering roles involving reactive programming, microservices architecture, cloud-native patterns, and high throughput data pipelines.
+[![Java](https://img.shields.io/badge/Java-17-blue.svg)]()  
+[![Spring WebFlux](https://img.shields.io/badge/Spring-WebFlux-6DB33F.svg)]()  
+[![Reactive](https://img.shields.io/badge/Reactive-Non%20Blocking-orange.svg)]()  
+[![Build](https://img.shields.io/badge/Build-Maven%203.8+-brightgreen.svg)]()  
+
+A fully non blocking aggregation service designed for high throughput environments.  
+This project demonstrates scalable reactive patterns used in modern distributed systems.
 
 ---
 
 ## Overview
 
-Reactive Product Aggregator acts as a non-blocking aggregation layer.  
-It retrieves data from two external systems in parallel, merges responses using `Mono.zip`, and exposes a clean reactive API to clients.
-
-The service leverages:
-
-* **Spring WebFlux** for an end-to-end reactive HTTP stack  
-* **Project Reactor** for asynchronous composition with `Mono` and `Flux`  
-* **Java 17** functional constructs and modern language features  
-* **Resilience patterns** like retry with exponential backoff  
-* **Non-blocking I/O** for scalable concurrency without thread contention  
-
-This codebase is intentionally minimal yet representative of production-grade architectural thinking.
+Reactive Product Aggregator performs concurrent fan out to multiple external providers and merges responses using Mono.zip, delivering a unified, low latency API.  
+Built for developers who want to understand production ready WebFlux design.
 
 ---
 
 ## Architecture
 
-Client → Controller → Service → WebClient reactive calls → External APIs
-
-
-* External calls are executed concurrently.
-* Results are merged reactively without blocking.
-* Backpressure and lazy evaluation are inherent to Reactor pipelines.
-* The system is designed to scale horizontally under heavy load.
+```
+                  ┌─────────────────────────────┐
+                  │        Client Request       │
+                  └──────────────┬──────────────┘
+                                 │
+                                 ▼
+                     ┌───────────────────────┐
+                     │       Controller      │
+                     └───────────┬───────────┘
+                                 │
+                                 ▼
+                     ┌────────────────────────┐
+                     │        Service         │
+                     │ Reactive Orchestration │
+                     └──────────┬─────────────┘
+                                │ Mono.zip
+         ┌──────────────────────┼─────────────────────────┐
+         ▼                      ▼                         ▼
+┌──────────────────┐  ┌──────────────────┐     ┌──────────────────┐
+│  External API A  │  │  External API B  │ ... │  External API N  │
+└──────────────────┘  └──────────────────┘     └──────────────────┘
+```
 
 ---
 
-## Technical Highlights
+## Key Features
 
-### Reactive HTTP Client
-Uses `WebClient` for fully non blocking I/O with support for:
-* Retry strategies  
-* Graceful fallbacks  
-* Parallel aggregation  
+### Reactive WebClient  
+* Fully asynchronous I/O  
+* Retry with backoff  
+* Reactive error propagation  
+* Parallel fan out and fan in  
 
-### Reactive Composition
-The service demonstrates:
-* `Mono.zip` for fan out and fan in  
-* `flatMap` for dependent async flows  
-* Clean separation of concerns  
+### Reactive Composition  
+* Mono.zip for concurrent orchestration  
+* flatMap for dependent sequences  
+* Lazy evaluation and backpressure ready  
 
-### Java 17 Features
-* Records (optional extension)  
-* Pattern matching (optional extension)  
-* Immutability and functional patterns  
+### Modern Java 17  
+* Functional style  
+* Pattern matching  
+* Immutability patterns  
 
 ---
 
@@ -62,8 +71,9 @@ The service demonstrates:
 
 ```http
 GET /products/{id}
+```
 
-Sample response:
+Sample Response
 
 ```json
 {
@@ -71,50 +81,53 @@ Sample response:
   "title": "Fjallraven Backpack",
   "price": 109.95
 }
+```
 
 ---
 
-## How to Run
+## Running the Service
 
-### Requirements
-
-* Java 17
-* Maven 3.8+
+### Requirements  
+* Java 17  
+* Maven 3.8+  
 
 ### Start the service
 
 ```bash
 mvn spring-boot:run
+```
 
-### Test
+### Test the API
 
-```http
+```bash
 curl http://localhost:8080/products/1
+```
 
 ---
 
-## Roadmap (Upcoming Enhancements)
+## Roadmap
 
-This project is evolving into a multi service reactive ecosystem including:
+Upcoming enhancements:
 
-* Redis reactive caching
-* DynamoDB or MongoDB integration
-* Reactive event streaming with Flux, SSE, and Kinesis
-* AWS Lambda processing pipeline
-* Distributed tracing with CloudWatch and OpenTelemetry
-* Dockerized microservices deployed to ECS
-* CI/CD pipelines with GitHub Actions
+* Reactive Redis caching  
+* DynamoDB or MongoDB reactive persistence  
+* Real time streaming with Flux, SSE, or Kinesis  
+* Lambda processing pipeline  
+* OpenTelemetry distributed tracing  
+* Dockerized microservices for ECS  
+* GitHub Actions CI  
+* Error budget SLOs and performance dashboards  
 
 ---
 
 ## Why This Project Matters
 
-Modern teams operate high throughput distributed systems where blocking code becomes a bottleneck.
-This project demonstrates the foundational patterns required to build scalable, reactive services that behave predictably under load.
+Most teams operate under distributed, high throughput workloads where blocking code becomes the scalability limiter.  
+This service demonstrates the architectural principles behind efficient reactive systems that scale horizontally and behave predictably under stress.
 
 ---
 
-## License
+## License  
 MIT
 
 ---
