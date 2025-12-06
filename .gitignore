@@ -1,0 +1,52 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Logs
+logs/
+*.log
+
+# IntelliJ
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+# VS Code / Cursor
+.vscode/
+.history/
+*.code-workspace
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+spring.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Docker
+docker-data/
+*.pid
+
+# Environment variables and secrets
+.env
+.env.*
+*.local
+
+# Build caches
+.cache/
