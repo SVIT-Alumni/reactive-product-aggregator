@@ -1,8 +1,10 @@
-package com.technologyasaservice.reactive_product_aggregator.controller;
+package com.technologyasamission.reactive_product_aggregator.controller;
 
-import com.technologyasaservice.reactive_product_aggregator.model.Product;
-import com.technologyasaservice.reactive_product_aggregator.service.ProductService;
 import org.springframework.web.bind.annotation.*;
+
+import com.technologyasamission.reactive_product_aggregator.model.Product;
+import com.technologyasamission.reactive_product_aggregator.service.ProductService;
+
 import reactor.core.publisher.Mono;
 
 @RestController

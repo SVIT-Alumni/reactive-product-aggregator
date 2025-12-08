@@ -1,10 +1,12 @@
-package com.technologyasaservice.reactive_product_aggregator.controller;
+package com.technologyasamission.reactive_product_aggregator.controller;
 
-import com.technologyasaservice.reactive_product_aggregator.model.Product;
-import com.technologyasaservice.reactive_product_aggregator.service.ProductStreamService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.technologyasamission.reactive_product_aggregator.model.Product;
+import com.technologyasamission.reactive_product_aggregator.service.ProductStreamService;
+
 import reactor.core.publisher.Flux;
 
 @RestController

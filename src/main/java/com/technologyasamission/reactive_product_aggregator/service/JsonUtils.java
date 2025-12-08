@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator.service;
+package com.technologyasamission.reactive_product_aggregator.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator.controller;
+package com.technologyasamission.reactive_product_aggregator.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

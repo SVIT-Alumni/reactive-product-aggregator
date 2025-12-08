@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator.model;
+package com.technologyasamission.reactive_product_aggregator.model;
 
 import lombok.Data;
 

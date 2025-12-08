@@ -1,0 +1,1 @@
+package com.technologyasamission.reactive_product_aggregator.model;

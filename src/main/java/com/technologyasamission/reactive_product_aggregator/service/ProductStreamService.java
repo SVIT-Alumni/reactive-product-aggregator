@@ -1,7 +1,9 @@
-package com.technologyasaservice.reactive_product_aggregator.service;
+package com.technologyasamission.reactive_product_aggregator.service;
 
-import com.technologyasaservice.reactive_product_aggregator.model.Product;
 import org.springframework.stereotype.Service;
+
+import com.technologyasamission.reactive_product_aggregator.model.Product;
+
 import reactor.core.publisher.Flux;
 
 import java.time.Duration;

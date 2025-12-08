@@ -1,9 +1,11 @@
-package com.technologyasaservice.reactive_product_aggregator.client;
+package com.technologyasamission.reactive_product_aggregator.client;
 
-import com.technologyasaservice.reactive_product_aggregator.model.ProductDetails;
-import com.technologyasaservice.reactive_product_aggregator.model.ProductPrice;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import com.technologyasamission.reactive_product_aggregator.model.ProductDetails;
+import com.technologyasamission.reactive_product_aggregator.model.ProductPrice;
+
 import reactor.core.publisher.Mono;
 import reactor.util.retry.Retry;
 
