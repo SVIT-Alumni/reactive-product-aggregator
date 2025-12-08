@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator;
+package com.technologyasamission.reactive_product_aggregator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.technologyasaservice.reactive-product-aggregator' is invalid and this project uses 'com.technologyasaservice.reactive_product_aggregator' instead.
+* The original package name 'com.technologyasamission.reactive-product-aggregator' is invalid and this project uses 'com.technologyasamission.reactive_product_aggregator' instead.
 
 # Getting Started
 

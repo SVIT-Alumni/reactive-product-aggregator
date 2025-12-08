@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator.config;
+package com.technologyasamission.reactive_product_aggregator.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

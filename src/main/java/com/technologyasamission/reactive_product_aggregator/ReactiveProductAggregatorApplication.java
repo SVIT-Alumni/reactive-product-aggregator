@@ -1,4 +1,4 @@
-package com.technologyasaservice.reactive_product_aggregator;
+package com.technologyasamission.reactive_product_aggregator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
